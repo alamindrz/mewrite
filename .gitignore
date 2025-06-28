@@ -1,0 +1,44 @@
+# Byte-compiled Python files
+*.py[cod]
+
+# Log files
+*.log
+*migrations
+*__pycache__
+*.git
+# Database files
+*.sqlite3
+db.sqlite3
+
+# Django media files
+/media/
+
+# Django static files
+/staticfiles/
+
+# Virtual environment files
+env/
+venv/
+ENV/
+
+# IDE files
+.idea/
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Django secret key
+*.key
+
+# Coverage reports
+htmlcov/
+.coverage
+
+# pytest debug files
+.pytest_cache/
+
+# Other
+*.pyc
+__pycache__/

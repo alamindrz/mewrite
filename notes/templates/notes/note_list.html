@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>My Notes</h2>
+<a href="{% url 'note_create' %}" class="btn btn-primary mb-2">+ New Note</a>
+<ul class="list-group">
+  {% for note in notes %}
+    <li class="list-group-item">
+      <a href="{% url 'note_detail' note.pk %}">{{ note.title }}</a>
+      <span class="text-muted float-end">{{ note.updated_at|date:"d M Y H:i" }}</span>
+    </li>
+  {% empty %}
+    <li class="list-group-item">No notes yet.</li>
+  {% endfor %}
+</ul>
+{% endblock %}
