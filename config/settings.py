@@ -55,7 +55,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'config.wsgi.application'
+WSGI_APPLICATION = '/home/alamindrz/mewrite/config.wsgi.application'
 
 
 # Database
